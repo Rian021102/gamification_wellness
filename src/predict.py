@@ -9,7 +9,7 @@ def predict(chosen_model, img, classes=[], conf=0.5):
 
     return results
 
-def predict_and_detect(chosen_model, img, classes=[], conf=0.5, rectangle_thickness=2, text_thickness=1):
+def predict_and_detect(chosen_model, img, classes=[], conf=0.4, rectangle_thickness=2, text_thickness=1):
     results = predict(chosen_model, img, classes, conf=conf)
     for result in results:
         for box in result.boxes:

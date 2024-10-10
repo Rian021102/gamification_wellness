@@ -23,7 +23,7 @@ def predict_and_detect(chosen_model, img, classes=[], conf=0.5, rectangle_thickn
 model = YOLO("/Users/rianrachmanto/miniforge3/yolov11n_custom/train2/weights/best.pt")
 
 # Initialize the video capture from the built-in camera (index 0 for default camera)
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 if not cap.isOpened():
     print("Error: Could not open video capture.")
     exit()
